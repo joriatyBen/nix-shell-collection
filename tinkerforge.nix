@@ -1,7 +1,5 @@
 { pkgs ? (import <nixpkgs> {}).pkgs }:
-with pkgs;
-
-mkShell {
+with pkgs; mkShell {
   nativeBuildInputs = [ pkgs.autoPatchelfHook ];
 
   buildInputs = [

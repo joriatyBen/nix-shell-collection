@@ -12,7 +12,7 @@ with pkgs; mkShell {
       python310
       python310Packages.pip
       python310Packages.setuptools
-      #ansible_2_10
+      #ansible_2_10 #uncommend if system wide not existing
       ugrep
       flux
       fluxcd
@@ -23,7 +23,7 @@ with pkgs; mkShell {
         export PATH="$PIP_PREFIX/bin:$PATH"
         unset SOURCE_DATE_EPOCH
         zsh
-      '';
+      '';  
     AWS_PAGER = "";
     AWS_VAULT_PASS_PREFIX = "aws-vault";
     AWS_VAULT_BACKEND = "pass";
