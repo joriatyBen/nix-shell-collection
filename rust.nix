@@ -5,7 +5,7 @@ in
 with pkgs; mkShell {
   
   nativeBuildInputs = with pkgs; [ 
-    pkgconfig 
+    pkg-config 
     llvm 
     clang 
     unstable.rustc 
