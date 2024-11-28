@@ -36,7 +36,7 @@
         export PYTHONPATH="$PIP_PREFIX/${pkgs.python310.sitePackages}:$PYTHONPATH"
         export PATH="$PIP_PREFIX/bin:$PATH"
         unset SOURCE_DATE_EPOCH
-        zsh
+        exec zsh
       '';
       # aws vault env vars
       AWS_PAGER = "";

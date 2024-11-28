@@ -7,9 +7,11 @@ with pkgs; mkShell {
       nodePackages.typescript
       nodePackages.prettier
       nodePackages.eslint
+      bun
     ];
+
     shellHook = ''
-        zsh
+        exec zsh
     '';  
 }
 

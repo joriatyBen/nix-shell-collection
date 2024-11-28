@@ -22,7 +22,7 @@ with pkgs; mkShell {
         export PYTHONPATH="$PIP_PREFIX/${pkgs.python310.sitePackages}:$PYTHONPATH"
         export PATH="$PIP_PREFIX/bin:$PATH"
         unset SOURCE_DATE_EPOCH
-        zsh
+        exec zsh
       '';  
     AWS_PAGER = "";
     AWS_VAULT_PASS_PREFIX = "aws-vault";

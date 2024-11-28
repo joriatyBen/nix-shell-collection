@@ -23,7 +23,7 @@
         nodePackages.eslint
       ];
       shellHook = ''
-        zsh
+        exec zsh
       '';
     };
   };
